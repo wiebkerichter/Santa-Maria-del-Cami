@@ -124,6 +124,29 @@ section .button {
   text-transform: uppercase;
 }
 
+table {
+  width: 100%;
+}
+
+table thead {
+  background-color: #462cb2;
+  color: white;
+  border: 0;
+}
+
+table th,
+td {
+  text-align: center;
+  padding: 10px;
+}
+
+table .table-container {
+  overflow-x: auto;
+}
+table .temp-min {
+  background-color: #bfbdc7;
+}
+
 footer {
   background-image: linear-gradient(
       rgba(39, 32, 68, 0.9),
@@ -179,9 +202,6 @@ footer p {
 .img-responsive {
   width: 100%;
   display: block;
-}
-.img-center-vertical {
-  object-position: 50% 50%;
 }
 
 .text-center {

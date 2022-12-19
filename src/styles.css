@@ -3,6 +3,11 @@ body {
   background-color: #181525;
 }
 
+.container {
+  max-width: 1400px;
+  margin: 10px auto;
+}
+
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("/src/images/santa-maria-del-cami-hero.jpg");
@@ -49,6 +54,38 @@ header button {
   border: none;
 }
 
+main .section-1 {
+  padding: 100px;
+  background-color: #fff;
+}
+
+section h2 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 5px;
+  color: #272044;
+  opacity: 0.3;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+section h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  color: #272044;
+  margin: 0;
+}
+
+section p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #272044;
+  opacity: 0.7;
+}
+
 footer {
   background-image: linear-gradient(
       rgba(39, 32, 68, 0.9),
@@ -60,13 +97,6 @@ footer {
   background-repeat: no-repeat;
   padding: 50px;
   color: white;
-  margin-top: 20px;
-}
-
-footer .footer-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  grid-gap: 20px;
 }
 
 footer h3 {
@@ -92,7 +122,24 @@ footer p {
   opacity: 0.7;
 }
 
-@media (max-width: 900px) {
+.grid {
+  display: grid;
+  grid-gap: 64px;
+}
+
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-columns-middle-large {
+  grid-template-columns: 1fr 2fr 1fr;
+}
+.img-responsive {
+  width: 100%;
+  display: block;
+}
+
+@media (max-width: 960px) {
   header {
     padding: 60px 0;
   }
@@ -105,19 +152,17 @@ footer p {
   header h3 {
     font-size: 12px;
   }
-  footer .footer-wrapper {
+  main .section-1 {
+    padding: 30px;
+    text-align: center;
+  }
+  main .section-1 h3 {
+    font-size: 26px;
+    line-height: 30px;
+    margin: 0;
+  }
+  .grid {
     grid-template-columns: 1fr;
-  }
-}
-
-@media (min-width: 1450px) {
-  footer .footer-wrapper {
-    grid-template-columns: 1fr 2fr 1fr 1fr;
-  }
-}
-
-@media (min-width: 1900px) {
-  header h1 {
-    font-size: 94px;
+    grid-gap: 32px;
   }
 }

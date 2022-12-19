@@ -50,15 +50,46 @@ header button {
 }
 
 footer {
-  font-size: 20px;
+  background-image: linear-gradient(
+      rgba(39, 32, 68, 0.9),
+      rgba(39, 32, 68, 0.9)
+    ),
+    url("/src/images/santa-maria-footer.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50px;
   color: white;
-  opacity: 30%;
+  margin-top: 20px;
+}
+
+footer .footer-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-gap: 20px;
+}
+
+footer h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+footer ul {
+  list-style: none;
+  padding-left: 0;
 }
 
 footer a {
   color: white;
-  opacity: 40%;
+  opacity: 0.7;
   text-decoration: none;
+}
+
+footer p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  opacity: 0.7;
 }
 
 @media (max-width: 900px) {
@@ -73,6 +104,15 @@ footer a {
   }
   header h3 {
     font-size: 12px;
+  }
+  footer .footer-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 1450px) {
+  footer .footer-wrapper {
+    grid-template-columns: 1fr 2fr 1fr 1fr;
   }
 }
 
